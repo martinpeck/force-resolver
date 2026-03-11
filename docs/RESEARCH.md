@@ -2,6 +2,15 @@
 
 ## Executive Summary
 
+The research task provided was:
+
+> I want to build a tool that makes it easier for me to resolve 
+  forces. I'm studying maths, and one of the topics I have is static forces 
+  acting at angles, or acting on objects that are experiencing friction. I 
+  want to easily enter the details of forces, distances, angles, coefficients 
+  of friction etc and then have a tool solve these situations by calculating 
+  and illustrating the set of unknowns.
+  
 You want a tool where you can input forces (magnitudes, angles), distances, coefficients of friction, and inclined plane angles, and have it **solve for unknowns** (reaction forces, friction forces, tensions, etc.) and **illustrate the result** with a free-body diagram. This is a well-scoped project that maps directly onto A-level mechanics topics: resolving forces into components, applying equilibrium conditions (ΣFx = 0, ΣFy = 0, ΣM = 0), and modelling friction (F ≤ μR).
 
 The best approach is a **Python application** using **SymPy** for symbolic equation solving, **NumPy** for numerical computation, and **Matplotlib** (or the `pyfreebody` library) for force-diagram visualisation. For the user interface, **Streamlit** provides the fastest path to an interactive web-based tool that runs locally, while **Tkinter** is a viable desktop alternative. This report covers the full technology landscape, mathematical foundations, architecture options, and working code examples.
